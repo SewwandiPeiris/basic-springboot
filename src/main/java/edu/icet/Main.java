@@ -5,13 +5,13 @@ import edu.icet.model.Student;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        Student st = new Student();
 
-        st.setFirstName("Kasun").setLastName("Anuruddha").setContactNumber("0987654321"); //builder
+        Student st = Student.builder().firstName("Kasun").lastName("Anuruddha").contactNumber("0987654321").build(); //builder
 
-        st.setFirstName("Kasun");
-        st.setLastName("Anuruddha");
-        st.setContactNumber("0987654321");
-        System.out.println(st);
+        Student st1 = new Student();
+        st1.setFirstName("Sew");
+        st1.setLastName("Mari");
+        st1.setContactNumber("8675421093");
+
     }
 }
