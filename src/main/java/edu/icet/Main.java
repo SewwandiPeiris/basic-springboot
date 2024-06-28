@@ -1,17 +1,17 @@
 package edu.icet;
 
+import edu.icet.controller.studentController;
 import edu.icet.model.Student;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-        Student st = Student.builder().firstName("Kasun").lastName("Anuruddha").contactNumber("0987654321").build(); //builder
-
-        Student st1 = new Student();
-        st1.setFirstName("Sew");
-        st1.setLastName("Mari");
-        st1.setContactNumber("8675421093");
-
+        SpringApplication.run(Main.class);
+        //Until today, we run java method through the main method.
+        //But today, we run java method through the browser by using spring boot.
     }
 }
